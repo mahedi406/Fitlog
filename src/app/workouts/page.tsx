@@ -6,6 +6,15 @@ const WorkoutPage = () => {
     return (
         <div>
             <Banner></Banner>
+
+            <div className='p-5'>
+                
+            <h1 className='font-extrabold text-3xl'>THE LIBRARY</h1>
+            <h3 className='font-extralight'>Twelve lifts covering every major muscle group.</h3>
+
+            
+            </div>
+            
             <Info></Info>
         </div>
     );

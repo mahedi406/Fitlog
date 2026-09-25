@@ -10,7 +10,6 @@ const Navbar = () => {
         <nav className="h-16 border-b border-[#202125] bg-[#0b0c0e]">
             <div className="container mx-auto flex h-full items-center justify-between px-4 sm:px-6">
 
-                {/* Logo */}
                 <Link
                     href="/workouts"
                     className="flex shrink-0 items-center gap-2"
@@ -29,13 +28,11 @@ const Navbar = () => {
                 </Link>
 
 
-                {/* Center Navigation */}
                 <div className="mx-3">
                     <NavbarBtn />
                 </div>
 
 
-                {/* Right Side */}
                 <div className="flex shrink-0 items-center gap-3 text-xs sm:gap-5 sm:text-sm">
 
                     {/* Plan */}
@@ -53,7 +50,6 @@ const Navbar = () => {
                     </Link>
 
 
-                    {/* Saved */}
                     <Link
                         href="/my-plan"
                         className="hidden text-[#777a82] transition hover:text-white sm:block"
@@ -62,7 +58,6 @@ const Navbar = () => {
                     </Link>
 
 
-                    {/* User / Count */}
                     <span className="flex h-6 w-6 items-center justify-center rounded-full border border-[#292b30] text-[10px] text-[#777a82]">
                         0
                     </span>
