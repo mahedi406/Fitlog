@@ -1,9 +1,13 @@
 import React from 'react';
 import { IExercise } from '@/Type/type';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const InfoCard = ({data} : {data:IExercise}) => {
     return (
+
+        <Link href={`/exercise/${data.id}`}>
+
        <div className="bg-[#15171b] border border-[#25282e] rounded-xl overflow-hidden">
 
   <img
@@ -45,6 +49,7 @@ const InfoCard = ({data} : {data:IExercise}) => {
 
 </div>
 
+</Link>
     );
 };
 
