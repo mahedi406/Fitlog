@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 import logo from "@/assets/logo.png";
 import NavbarBtn from "./NavbarBtn";
+import { ExerciseContext } from "@/app/context/ExerciseContext";
+import CountBtnSave from "./Button/countBtn";
+import CountPlanBtn from "./Button/countPlanBtn";
 
 const Navbar = () => {
+
+
     return (
         <nav className="h-16 border-b border-[#202125] bg-[#0b0c0e]">
             <div className="container mx-auto flex h-full items-center justify-between px-4 sm:px-6">
@@ -35,7 +40,6 @@ const Navbar = () => {
 
                 <div className="flex shrink-0 items-center gap-3 text-xs sm:gap-5 sm:text-sm">
 
-                    {/* Plan */}
                     <Link
                         href="/my-plan"
                         className="flex items-center gap-1.5 text-[#a1a3aa] transition hover:text-white sm:gap-2"
@@ -45,7 +49,7 @@ const Navbar = () => {
                         </span>
 
                         <span className="flex h-5 min-w-5 items-center justify-center rounded-full bg-[#b7ff00] px-1 text-[10px] font-bold text-black">
-                            0
+                            <CountPlanBtn></CountPlanBtn>
                         </span>
                     </Link>
 
@@ -59,7 +63,7 @@ const Navbar = () => {
 
 
                     <span className="flex h-6 w-6 items-center justify-center rounded-full border border-[#292b30] text-[10px] text-[#777a82]">
-                        0
+                        <CountBtnSave></CountBtnSave>
                     </span>
 
                 </div>
