@@ -12,7 +12,7 @@ const Navbar = () => {
 
 
     return (
-        <nav className="h-16 border-b border-[#202125] bg-[#0b0c0e]">
+        <nav className="fixed top-0 left-0 w-full z-50 shadow-md h-16 border-b border-[#202125] bg-[#0b0c0e]">
             <div className="container mx-auto flex h-full items-center justify-between px-4 sm:px-6">
 
                 <Link

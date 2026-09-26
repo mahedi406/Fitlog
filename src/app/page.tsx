@@ -10,12 +10,16 @@ const HomePage = () => {
             <div className='container mx-auto mt-7 mb-5'>
                 
             <h1 className='font-extrabold text-3xl'>THE LIBRARY</h1>
-            <h3 className='font-extralight'>Twelve lifts covering every major muscle group.</h3>
+            <h3 className='font-extralight mb-5'>Twelve lifts covering every major muscle group.</h3>
 
             
-            </div>
-            
             <Info></Info>
+            
+            </div>
+
+            
+            
+            
         </div>
   );
 };
