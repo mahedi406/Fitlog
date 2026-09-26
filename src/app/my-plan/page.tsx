@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { toast } from 'react-toastify';
 import PlanCard from '../components/homepage/PlanCard';
 import SaveCard from '../components/homepage/SaveCard';
+import { IExercise } from '@/Type/type';
 
 const MyPlanPage = () => {
 
@@ -36,15 +37,15 @@ const MyPlanPage = () => {
         return 0;
     });
 
-    const totalMinutes = currentList.reduce((total, exercise) =>total + Number(exercise.duration),0);
+    const totalMinutes = currentList.reduce((total: number, exercise: IExercise) =>total + Number(exercise.duration),0);
 
-    const totalCalories = currentList.reduce((total, exercise) =>total + Number(exercise.caloriesBurned),0);
+    const totalCalories = currentList.reduce((total: number, exercise: IExercise) =>total + Number(exercise.caloriesBurned),0);
 
     const removeCard = (id: number) => {
 
-        const removedExercise = plan.find(exercise => exercise.id === id);
+        const removedExercise = plan.find((exercise: IExercise) => exercise.id === id);
 
-        setPlan(plan.filter(item => item.id !== id));
+        setPlan(plan.filter((item: IExercise) => item.id !== id));
 
         if (removedExercise) {
             toast.info(
@@ -56,9 +57,9 @@ const MyPlanPage = () => {
 
     const removeSave = (id: number) => {
 
-    const removedExercise = save.find(exercise => exercise.id === id);
+    const removedExercise = save.find((exercise: IExercise) => exercise.id === id);
 
-    setSave(save.filter(item => item.id !== id));
+    setSave(save.filter((item: IExercise) => item.id !== id));
 
     if (removedExercise) {
         toast.info(`${removedExercise.name} removed from saved!`);

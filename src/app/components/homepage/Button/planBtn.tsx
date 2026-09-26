@@ -10,7 +10,7 @@ const PlanBtn = ({ exercise }: { exercise: IExercise }) => {
     const { plan, setPlan } = useContext(ExerciseContext);
 
     const handleRemove = () =>{
-        setPlan(plan.filter(iteam => iteam.id !== id));
+        setPlan(plan.filter(iteam => iteam.id !== exercise.id));
     }
 
     const handlePlan = () => {
