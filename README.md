@@ -2,6 +2,20 @@
 
 Fit Log is a modern fitness and exercise tracking web application built with Next.js and TypeScript. Users can explore different exercises, view exercise details, create their personal workout plan, and save their favorite exercises in an organized way.
 
+---
+
+## 🌐 Live Demo
+
+🔗 Live Website: https://fitlog-two-flame.vercel.app/my-plan
+
+---
+
+## 💻 GitHub Repository
+
+🔗 GitHub Repository: https://github.com/mahedi406/Fitlog
+
+---
+
 ## 🚀 Technologies Used
 
 * **Next.js** – React framework for building the application
