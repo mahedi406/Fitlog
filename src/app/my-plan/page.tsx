@@ -73,7 +73,7 @@ const MyPlanPage = () => {
 
             <div className="mb-6">
 
-                <h2 className="text-2xl font-extrabold text-white">
+                <h2 className="text-2xl font-extrabold text-white mt-19">
                     MY PLAN
                 </h2>
 
