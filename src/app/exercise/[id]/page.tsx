@@ -1,6 +1,7 @@
 import PlanBtn from '@/app/components/homepage/Button/planBtn';
 import SaveBtn from '@/app/components/homepage/Button/saveBtn';
 import { IExercise } from '@/Type/type';
+import Image from 'next/image';
 import React from 'react';
 
 interface IExerciseProps {
@@ -25,7 +26,7 @@ const ExerciseDetails = async ({ params }: IExerciseProps) => {
   ) as IExercise;
 
   return (
-    <div className="min-h-screen bg-[#0b0d10] p-4 md:p-6 lg:p-8">
+    <div className="mt-15 min-h-screen bg-[#0b0d10] p-4 md:p-6 lg:p-8">
 
       <div className="max-w-7xl mx-auto">
 
@@ -34,9 +35,11 @@ const ExerciseDetails = async ({ params }: IExerciseProps) => {
           <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_1fr] gap-6 p-5">
 
             <div>
-              <img
+              <Image
                 src={exercise.image}
                 alt={exercise.name}
+                height={400}
+                width={560}
                 className="w-full h-[400px] lg:h-[560px] object-cover rounded-xl"
               />
             </div>

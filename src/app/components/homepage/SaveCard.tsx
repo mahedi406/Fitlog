@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { IExercise } from '@/Type/type';
+import Image from 'next/image';
 
 interface SaveCardProps {
     exercise: IExercise;
@@ -17,9 +18,11 @@ const SaveCard = ({ exercise, removeSave }: SaveCardProps) => {
         >
 
 
-            <img
+            <Image
                 src={exercise.image}
                 alt={exercise.name}
+                height={70}
+                width={110}
                 className="w-[110px] h-[70px] rounded-lg object-cover shrink-0"
             />
 

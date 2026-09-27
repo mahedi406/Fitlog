@@ -1,7 +1,7 @@
 import React from 'react';
 import { IExercise } from '@/Type/type';
-import Image from 'next/image';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const InfoCard = ({data} : {data:IExercise}) => {
     return (
@@ -10,11 +10,7 @@ const InfoCard = ({data} : {data:IExercise}) => {
 
        <div className="bg-[#15171b] border border-[#25282e] rounded-xl overflow-hidden">
 
-  <img
-    src={data.image}
-    alt={data.name}
-    className="w-full h-[130px] object-cover"
-  />
+  <Image src={data.image} alt={data.name} width={500} height={300} className="w-full h-[130px] object-cover"/>
 
   <div className="p-4">
 

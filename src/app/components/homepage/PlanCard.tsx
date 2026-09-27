@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { IExercise } from '@/Type/type';
+import Image from 'next/image';
 
 interface PlanCardProps {
     exercise: IExercise;
@@ -16,9 +17,11 @@ const PlanCard = ({ exercise, removeCard }: PlanCardProps) => {
             className="flex items-center gap-4 bg-[#15171b] border border-[#25282e] rounded-xl p-3"
         >
 
-            <img
+            <Image
                 src={exercise.image}
                 alt={exercise.name}
+                height={70}
+                width={110}
                 className="w-[110px] h-[70px] rounded-lg object-cover shrink-0"
             />
 
